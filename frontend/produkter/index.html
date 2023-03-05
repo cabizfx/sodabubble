@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SodaBubble: Produkter</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="/dompurify.js"></script>
+</head>
+<body>
+    <nav>
+        <header class="header">
+            <a href="/index.html"><img class="img-logo" src="/assets/wordmark_hori.png" alt="SodaBubble logo"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li class="hjem-nav"><a href="/index.html">Hjem</a></li>
+                <li><a class="highlight" href="/produkter/index.html">Produkter</a></li>
+                <li><a href="/kontakt/index.html">Kontakt</a></li>
+            </ul>
+        </header>
+    </nav>
+    <section class="hero__welcome">
+        <article class="hero__text">
+            <h1 class="hero__heading">Se vores sortiment!</h1>
+            <p class="hero__paragraph">Gør hvert slurk sprudlende med SodaBubble.</p>
+        </article>
+        <video autoplay loop muted playsinline class="stockvid__video">
+            <source src="/assets/stockvid.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="products">
+        <h1 class="products__heading">Vores produkter</h1>
+        <p class="products__info">SodaBubble er et produkt, der lader dig lave danskvand og sodavand med genanvendelige flasker og gaspatroner. Du kan vælge mellem mange smage og nyde et moderne og elegant design. SodaBubble er for boble- og miljøelskere.</p>
+        <div class="loader"><div></div></div>
+        <section class="item__list" id="item_list">
+            <!-- <article class="item__card">
+                <img class="item__img" src="/assets/items/light.jpg" alt="SodaBubble Light">
+                <h2 class="item__title">SodaBubble Light</h2>
+                <p class="item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, obcaecati dolore saepe omnis, commodi rem perspiciatis consequuntur aspernatur nulla voluptatibus, quaerat qui consectetur expedita ducimus soluta blanditiis officia delectus aperiam.</p>
+                <p class="item__price">499,-</p>
+                <button class="item__btn">Køb nu</button>
+            </article> -->
+        </section>
+    </section>
+
+
+    <footer class="footer__parrent">
+        <section class="footer__section-1">
+            <img src="/assets/wordmark_vert.png" alt="SodaBubble">
+        </section>
+        <section class="footer__section-2">
+            <h2 class="footer__section-2-title">Vores historie</h2>
+            <p class="footer__section-2-text">SodaBubbles blev skabt i 2023 af et team af unge iværksættere, der elskede brusende vand og ville gøre det mere bæredygtigt og personligt. Med SodaBubbles kan du lave dit eget brusende vand med smag og bobler, og spare både penge og plastik. SodaBubbles er din nye ven i køkkenet!</p>
+        </section>
+        <section class="footer__section-3">
+            <nav class="footer_nav">
+                <ul class="footer_ul">
+                    <li class="hjem-nav"><a href="/index.html">Hjem</a></li>
+                    <li><a class="highlight" href="/produkter/index.html">Produkter</a></li>
+                    <li><a href="/kontakt/index.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+    <footer class="underfooter">
+        <p>© 2023 SodaBubble - All Rights Reserved</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

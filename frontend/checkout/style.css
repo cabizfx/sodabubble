@@ -1,0 +1,173 @@
+.hero__welcome {
+    height: 50%;
+    overflow: hidden;
+}
+.stockvid__video {
+    height: 50%;
+    top: 0;
+}
+
+.payment__section {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.pay__form {
+  padding: 5rem;
+}
+
+.order__view {
+  display: flex;
+}
+.products__heading, .order__success {
+  font-family: "Roboto Slab";
+  font-size: 2rem;
+  margin: 1rem 0 1rem 0;
+  text-align: center;
+}
+.products__info, .order__success-desc {
+  font-family: "Noto Sans";
+  font-size: 1rem;
+  padding: 0 2rem 0;
+  text-align: center;
+}
+
+.item__card {
+  width: 20rem;
+  height: fit-content;
+  border-radius: 20px;
+  background-color: rgba(240, 240, 240, 0.5);
+}
+.item__img {
+  height: 20rem;
+  width: auto;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  object-fit: cover;
+}
+.item__title {
+  font-family: "Roboto Slab";
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem 0;
+  margin: 0;
+}
+.item__desc {
+  font-family: "Noto Sans";
+  font-size: 1rem;
+  padding: 0 1rem 0;
+  margin: 0.5rem 0;
+}
+.item__price {
+  font-family: "Roboto Slab";
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 0 1rem 1rem;
+  margin: 0;
+  text-align: right;
+}
+.form__c2a {
+  font-family: "Noto Sans";
+  font-weight: 800;
+  font-size: 1rem;
+  float: right;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 30px;
+  border-color: transparent;
+  padding: 0.5rem 0.9rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+input[type=text], 
+input[type=email], 
+textarea {
+    background-color: rgba(245, 245, 245, 1);
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+    border: none;
+}
+
+form label {
+    font-family: "Noto Sans";
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+@media screen and (min-width: 960px) {
+  .payment__section {
+    flex-direction: row;
+
+  }
+}
+
+/* LOADER */
+.loader {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+  }
+  .loader div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: var(--primary-color);
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .loader div:after,
+  .loader div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: var(--primary-color);
+  }
+  .loader div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+  }
+  .loader div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+  }
+  @keyframes lds-heart {
+    0% {
+      transform: scale(0.95);
+    }
+    5% {
+      transform: scale(1.1);
+    }
+    39% {
+      transform: scale(0.85);
+    }
+    45% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  

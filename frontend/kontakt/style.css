@@ -1,0 +1,40 @@
+input[type=text], 
+input[type=email], 
+textarea {
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+form label {
+    font-family: "Noto Sans";
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.hero__text {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding: 1em;
+}
+
+
+/* computer-størrelse */
+@media screen and (min-width: 960px) {
+    .hero__text {
+        padding: 2rem;
+    }
+}

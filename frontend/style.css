@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #d0b32f;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ul {
+    padding: 0;
+}
+/* body */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    background-size: cover;
+    height: 100vh;
+}
+/* header- texten */
+a {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* header */
+
+.header {
+    position: fixed;
+    width: 100vw;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.highlight {
+    color: black;
+    font-weight: 900;
+}
+
+/* header- ul- listen */
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.header ul a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.4s;
+    opacity: 100%;
+}
+
+.header ul a:hover {
+    color: black;
+    opacity: 50%;
+}
+
+/* header- logo */
+.header .img-logo {
+    margin: 16px 16px 0 0;
+    height: 30px;
+    width: auto;
+    float: right;
+    display: block;
+    font-size: 2em;
+    transition: 0.7s;
+}
+.header .img-logo:hover {
+    opacity: 50%;
+}
+
+/* header- hamburger-menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+
+}
+
+/* header- hamburger- menu/ stregerne */
+
+.header .menu-icon .nav-icon {
+    background: black;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+    background: black;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon::after {
+    background: black;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+/* chek-box væk */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 100vh;
+}
+
+/* header- hamburger- menu animation- så det bliver til et kryds/ stregerne */
+
+.header .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.stockvid__video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.hero__welcome {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.hero__text {
+    padding: 2rem;
+}
+.hero__heading {
+    font-family: "Roboto Slab";
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2.9rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.hero__paragraph {
+    font-family: "Noto Sans";
+    font-weight: 200;
+    color: white;
+    margin: 0;
+    padding-top: 0.5rem;
+}
+.hero__c2a {
+    font-family: "Noto Sans";
+    font-weight: 800;
+    font-size: 1.3rem;
+    background-color: var(--primary-color);
+    color: black;
+    border-radius: 30px;
+    border-color: transparent;
+    padding: 0.5rem 0.9rem;
+    margin: 1rem 0;
+    mix-blend-mode: screen;
+    cursor: pointer;
+}
+.footer__parrent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: white;
+    padding: 2rem;
+    margin: 0;
+}
+.footer__section-1 {
+    display: flex;
+    justify-content: center;
+}
+.footer__section-1 img {
+    height: 5rem;
+    width: auto;
+    align-self: center;
+}
+.footer__section-2-title {
+    font-family: "Roboto Slab";
+    font-size: 1.5rem;
+    text-align: center;
+}
+.footer__section-2-text {
+    font-family: "Noto Sans";
+    font-size: 1rem;
+}
+.footer__section-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_ul li {
+    display: inline-block;
+    padding: 0 0.5rem;
+}
+.underfooter {
+    font-family: "Noto Sans";
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* mobil-størrelse, med header-menu */
+@media (min-width:48em) {
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu {
+        clear: none;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+}
+/* computer-størrelse */
+
+@media screen and (min-width: 960px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    .header {
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: 0.5s;
+        position: absolute;
+        width: 80vw;
+        padding: 0 2rem;
+        border-radius: 30px;
+        margin-top: 2rem;
+    }
+    .header ul {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .header .img-logo {
+        height: 35px;
+        margin-top: 13.5px;
+    }
+    .hero__c2a {
+        transition: 0.8s;
+    }
+    .hero__c2a:hover {
+        background-color: transparent;
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
+    }
+    .footer__parrent {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer__section-2-title {
+        text-align: start;
+    }
+    .footer_ul li a {
+        transition: 0.5s;
+        opacity: 100%;
+    }
+    .footer_ul li a:hover {
+        opacity: 50%;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* LOADER */
+.loader {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+  }
+  .loader div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: var(--primary-color);
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .loader div:after,
+  .loader div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: var(--primary-color);
+  }
+  .loader div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+  }
+  .loader div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+  }
+  @keyframes lds-heart {
+    0% {
+      transform: scale(0.95);
+    }
+    5% {
+      transform: scale(1.1);
+    }
+    39% {
+      transform: scale(0.85);
+    }
+    45% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  

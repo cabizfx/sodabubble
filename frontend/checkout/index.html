@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SodaBubble: Checkout</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="/dompurify.js"></script>
+
+</head>
+<body>
+    <nav>
+        <header class="header">
+            <a href="/index.html"><img class="img-logo" src="/assets/wordmark_hori.png" alt="SodaBubble logo"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li class="hjem-nav"><a href="/index.html">Hjem</a></li>
+                <li><a class="highlight" href="/produkter/index.html">Produkter</a></li>
+                <li><a href="/kontakt/index.html">Kontakt</a></li>
+            </ul>
+        </header>
+    </nav>
+    <section class="hero__welcome">
+        <article class="hero__text">
+            <h1 class="hero__heading">Betaling</h1>
+        </article>
+        <video autoplay loop muted playsinline class="stockvid__video">
+            <source src="/assets/stockvid.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="products">
+        <h1 class="products__heading">Din ordre:</h1>
+        <section class="payment__section">
+            <article class="pay__form">
+                <form>
+                    <label for="name">Navn</label>
+                    <input type="text" id="name" name="name" placeholder="Dit navn..">
+            
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Din email..">
+                    <button class="form__c2a place_order_btn">Placér ordre</button>
+                </form>
+
+                <!-- <h1 class="order__success">Yay! Tak for din ordre, ${ordererName}</h1>
+                <p class="order__success-desc">Tak for dit køb af [[produktNavn]]. Din ordre er allerede i gang med at blive behandlet og vil blive afsendt fra vores lager inden for 1-2 hverdage.</p>         -->
+            </article>
+            <article class="order__view">
+                
+            </article>
+        </section>
+        <!-- <div class="loader"><div></div></div> -->
+
+    </section>
+
+
+    <footer class="footer__parrent">
+        <section class="footer__section-1">
+            <img src="/assets/wordmark_vert.png" alt="SodaBubble">
+        </section>
+        <section class="footer__section-2">
+            <h2 class="footer__section-2-title">Vores historie</h2>
+            <p class="footer__section-2-text">SodaBubbles blev skabt i 2023 af et team af unge iværksættere, der elskede brusende vand og ville gøre det mere bæredygtigt og personligt. Med SodaBubbles kan du lave dit eget brusende vand med smag og bobler, og spare både penge og plastik. SodaBubbles er din nye ven i køkkenet!</p>
+        </section>
+        <section class="footer__section-3">
+            <nav class="footer_nav">
+                <ul class="footer_ul">
+                    <li class="hjem-nav"><a href="/index.html">Hjem</a></li>
+                    <li><a class="highlight" href="/produkter/index.html">Produkter</a></li>
+                    <li><a href="/kontakt/index.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+    <footer class="underfooter">
+        <p>© 2023 SodaBubble - All Rights Reserved</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
